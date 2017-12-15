@@ -18,7 +18,7 @@ public class Menu implements ActionListener{
 	Decimal dec;
 	Binary bin;
 	Hexadecimal hex;
-	public Menu(Decimal Dec, Binary Bin, Hexadecimal hex) {
+	public Menu(Binary Bin, Hexadecimal Hex, Decimal Dec) {
 		dec = Dec;
 		bin = Bin;
 		hex = Hex;
