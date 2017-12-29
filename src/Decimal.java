@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import java.util.Stack;
 
 public class Decimal {
@@ -37,12 +37,8 @@ public String decToHex(Integer input) {
 		for(int i = 0; i<s.size();i++) {
 			word= word + s.pop();
 		}
-	return word;
 	
 }
-=======
-
-public class Decimal {
-
->>>>>>> League-level5-Student/master
+	return word;
+}
 }
