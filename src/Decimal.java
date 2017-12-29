@@ -2,6 +2,7 @@
 import java.util.Stack;
 
 public class Decimal {
+	
 public String decToHex(Integer input) {
 	int temp1=input;
 	Integer temp2;
@@ -40,5 +41,13 @@ public String decToHex(Integer input) {
 	
 }
 	return word;
+}
+public String decToBin(Integer input) {
+	int temp1=input;
+	Integer temp2;
+	String word= "";
+	
+	return null;
+	
 }
 }
