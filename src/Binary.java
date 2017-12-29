@@ -1,10 +1,10 @@
 
 public class Binary {
 	public static void main(String[] args) {
-		convertDec("11001101");
+	
 	}
 	
-	static public int convertDec(String x) {
+	public int convertDec(String x) {
 		int returns = 0;
 		char[] s= x.toCharArray();
 		int y = s.length;
