@@ -43,12 +43,21 @@ public class Decimal {
 	}
 
 public String decToBin(Integer input) {
-	int temp1=input;
+	int temp1 = input;
 	Integer temp2;
-	String word= "";
-	
-	return null;
-	
-}
+	String word = "";
+	Stack<String> s = new Stack<String>();
+	while (temp1 != 1) {
+		temp2 = temp1 % 2;
 
+		temp1 = temp1 / 2;
+		s.push(temp2 + "");
+		}
+		for (int i = 0; i < s.size(); i++) {
+			word = word + s.pop();
+		}
+
+	
+	return word;
+}
 }
