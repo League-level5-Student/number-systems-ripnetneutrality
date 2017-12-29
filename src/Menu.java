@@ -80,19 +80,19 @@ public class Menu implements ActionListener{
 		}
 		if(e.getSource() == DtB) {
 			output = JOptionPane.showInputDialog("What decimal value do you want to be converted to binary?");
-			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToBin(Integer.valueOf(output)) + " in binary form.");
+			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToBin(Integer.parseInt(output)) + " in binary form.");
 		}
 		if(e.getSource() == DtH) {
 			output = JOptionPane.showInputDialog("What decimal value do you want to be converted to hexadecimal?");
-			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToHex(Integer.valueOf(output)) + " in hexadecimal form.");
+			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToHex(Integer.parseInt(output)) + " in hexadecimal form.");
 		}
-		if(e.getSource() == HtB) {
-			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to binary?");
-			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in binary form.");
-		}
-		if(e.getSource() == HtD) {
-			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to decimal?");
-			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in decimal form.");
-		}
+//		if(e.getSource() == HtB) {
+//			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to binary?");
+//			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in binary form.");
+//		}
+//		if(e.getSource() == HtD) {
+//			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to decimal?");
+//			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in decimal form.");
+//		}
 	}
 }

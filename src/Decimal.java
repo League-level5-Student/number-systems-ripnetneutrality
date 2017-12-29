@@ -2,9 +2,9 @@ import java.util.Stack;
 
 public class Decimal {
 
-	public String decToHex(Integer input) {
+	public String decToHex(int input) {
 		int temp1 = input;
-		Integer temp2;
+		int temp2;
 		String word = "";
 		Stack<String> s = new Stack<String>();
 		while (temp1 != 0) {
@@ -42,9 +42,9 @@ public class Decimal {
 		return word;
 	}
 
-public String decToBin(Integer input) {
+public String decToBin(int input) {
 	int temp1 = input;
-	Integer temp2;
+	int temp2;
 	String word = "";
 	Stack<String> s = new Stack<String>();
 	while (temp1 != 1) {
