@@ -62,12 +62,37 @@ public class Menu implements ActionListener{
 		mainFrame.setTitle(frame_Title);
 		mainFrame.setVisible(true);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		JOptionPane.showMessageDialog(null, "Please choose a button to continue with the program.");
 	}
-	@Override
+	
+	public void performAction(String from, String to) {
+		JOptionPane.showInputDialog("What " + from + " value do you want to be converted to " + to + "?");
+	}
+	
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+		String output;
+		if(e.getSource() == BtD) {
+			output = JOptionPane.showInputDialog("What binary value do you want to be converted to decimal?");
+			JOptionPane.showMessageDialog(null, "The converted binary value is " + bin.convertDec(output) + " in decimal form.");
+		}
+		if(e.getSource() == BtH) {
+			output = JOptionPane.showInputDialog("What binary value do you want to be converted to hexadecimal?");
+			JOptionPane.showMessageDialog(null, "The converted binary value is " + bin.convertHex(output) + " in hexadecimal form.");
+		}
+		if(e.getSource() == DtB) {
+			output = JOptionPane.showInputDialog("What decimal value do you want to be converted to binary?");
+			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToBin(Integer.valueOf(output)) + " in binary form.");
+		}
+		if(e.getSource() == DtH) {
+			output = JOptionPane.showInputDialog("What decimal value do you want to be converted to hexadecimal?");
+			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToHex(Integer.valueOf(output)) + " in hexadecimal form.");
+		}
+		if(e.getSource() == HtB) {
+			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to binary?");
+			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in binary form.");
+		}
+		if(e.getSource() == HtD) {
+			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to decimal?");
+			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in decimal form.");
+		}
 	}
 }
