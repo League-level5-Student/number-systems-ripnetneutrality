@@ -1,8 +1,5 @@
 
 public class Binary {
-	public static void main(String[] args) {
-	
-	}
 	
 	public int convertDec(String x) {
 		int returns = 0;
