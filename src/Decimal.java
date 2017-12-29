@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import java.util.Stack;
 
 public class Decimal {
@@ -39,4 +40,9 @@ public String decToHex(Integer input) {
 	return word;
 	
 }
+=======
+
+public class Decimal {
+
+>>>>>>> League-level5-Student/master
 }
