@@ -86,13 +86,13 @@ public class Menu implements ActionListener{
 			output = JOptionPane.showInputDialog("What decimal value do you want to be converted to hexadecimal?");
 			JOptionPane.showMessageDialog(null, "The converted decimal value is " + dec.decToHex(Integer.parseInt(output)) + " in hexadecimal form.");
 		}
-//		if(e.getSource() == HtB) {
-//			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to binary?");
-//			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in binary form.");
-//		}
-//		if(e.getSource() == HtD) {
-//			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to decimal?");
-//			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.(output) + " in decimal form.");
-//		}
+		if(e.getSource() == HtB) {
+			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to binary?");
+			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.toBinary(output) + " in binary form.");
+		}
+		if(e.getSource() == HtD) {
+			output = JOptionPane.showInputDialog("What hexadecimal value do you want to be converted to decimal?");
+			JOptionPane.showMessageDialog(null, "The converted hexadecimal value is " + hex.toDecimal(output) + " in decimal form.");
+		}
 	}
 }
